@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pytranscribe"
+version = "0.1.0"
+description = ""
+authors = ["Rafael Alexander Muijsert <rafael@muijsert.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+pytranscribe = "pytranscribe.pytranscribe:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
