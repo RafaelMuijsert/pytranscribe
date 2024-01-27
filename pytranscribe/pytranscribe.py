@@ -15,13 +15,27 @@ def load_stream_from_file(file_path: str) -> bytes:
 
     Raises:
         OSError if the file could not be read.
+
+    Returns:
+        bytes: The loaded audio stream.
     """
     with open(file_path, "rb") as file:
         data = file.read()
         return data
 
 
-def main():
+def transcribe_stream(stream: bytes) -> list:
+    """
+    Transcribes an audio stream.
+
+    stream (bytes): An audio stream.
+
+    Returns:
+        list: A list containing each word and their respective timestamp.
+    """
+
+
+def main() -> None:
     """
     Loads an audio stream from the provided path and transcribes it.
     """
